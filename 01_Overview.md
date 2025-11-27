@@ -11,7 +11,7 @@ Simple as that if you dumb it down.
 
 PPO is a training method. 
 The bot tries actions, gets rewards and learns which actions are good. 
-It repeats this many times and improves overtime. 
+It repeats this many times and improves gradually. 
 This depends on your structure, though.
 
 ## HOW TRAINING WORKS
