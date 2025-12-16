@@ -25,7 +25,7 @@ But that comes later! Think of it as the "master config file" but in C++ code fo
 
 You'll (usually) find it at:
 ```
-GigaLearnCPP-Leak-main\src
+GigaLearnCPP-Leak-main/src/ExampleMain.cpp
 ```
 
 This is the file you compile and run to start training.
@@ -74,7 +74,7 @@ You can adjust things slightly, but don't change everything at once. Experiment 
 
 - ExampleMain.cpp is where all training starts
 - It controls rewards, observations, game rules, and learning settings
-- Found at `GigaLearnCPP/src/ExampleMain.cpp`
+- Found at `GigaLearnCPP-Leak-main/src/ExampleMain.cpp`
 - The repo version is a working starting point for beginners
 - Edit this file to customize your bot's training
 
