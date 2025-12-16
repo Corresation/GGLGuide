@@ -49,7 +49,7 @@ This is where you:
 - Set learning config (learning rate, batch size, epochs, etc.)
 - Choose device (GPU or CPU)
 - Set tick skip and action delay
-- Configure WandB configss
+- Configure WandB configs
 - Start the training loop
 
 ## Why does this file matter?
