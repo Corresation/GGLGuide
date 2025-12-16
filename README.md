@@ -39,3 +39,6 @@ This guide is written for beginners. No understanding of math needed. No coding 
 
 Each folder will have simple markdown files with short explanations; nothing more.
 
+This guide includes further access to Zealan's RocketSimVis considering many people love vibe coding too much and somehow can't find it.
+Credit to Kuenec and Zealan for guide reference.
+
