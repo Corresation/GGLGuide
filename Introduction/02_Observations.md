@@ -1,6 +1,6 @@
 # 02: Observations
 
-## What Are Observations?
+## What are observations?
 
 Observations (also known as "Obs") are its surroundings your bot sees every frame. They describe the game state: where the ball is, where your car is, where teammates are, how much boost you have, and so on.
 
@@ -10,7 +10,7 @@ In extent to this, your bot can only learn from what it sees. If you don't inclu
 
 **Rule:** The observation itself must stay the same throughout training. You can't switch halfway through.
 
-## What's in an Observation?
+## What's in an observation?
 
 Every observation is a list of numbers (called a "vector"). Here's what AdvancedObs includes:
 
@@ -41,7 +41,3 @@ result.obsBuilder = new AdvancedObs();
 - Your bot learns from what it sees, so include important info
 - The observation size must stay constant during training
 - AdvancedObs is a good starting point for beginners
-
-## NEXT SECTION
-
-Move to the next section when you understand what an Obs is.
