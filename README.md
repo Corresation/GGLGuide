@@ -1,6 +1,6 @@
 # How to use GigaLearnCPP (RLBot Tutorial)
 
-A simple guide that teaches you how to make Rocket League bots using GigaLearn.
+A simple guide that teaches you how to make Rocket League bots using GigaLearnCPP.
 This guide is written for beginners. No understanding of math needed. No coding skill required. All of the following is simplified for beginners.
 
 ## WHAT THIS GUIDE GIVES YOU:
@@ -30,12 +30,12 @@ This guide is written for beginners. No understanding of math needed. No coding 
 
 ## SECTIONS
 
-* 01: Overview/Insight
-* 02: Observations & Parsers
+* 01: Overview
+* 02: Observations
 * 03: Rewards
 * 04: ExampleMain.cpp
-* 05: State Setters
-* 06: Letting Your Bot Train
+* 05: StateSetters
+* 06: Training
 
 Each folder will have simple markdown files with short explanations; nothing more.
 
