@@ -1,4 +1,4 @@
-# 01_Overview
+# 01: Overview and Introduction
 
 This section explains the basics of GigaLearn in simple terms.
 
