@@ -1,12 +1,12 @@
 # 05: State Setters
 
-## What Are State Setters?
+## What are State Setters?
 
 A **StateSetter** controls how each game starts when it resets. Does the game begin at kickoff? Does it start with random car and ball positions? Does the ball or the player spawn mid-air, or on the ground?
 
 This determines what situations your bot practices.
 
-## Why Do They Matter?
+## Why do they even matter?
 
 If you only train on kickoffs, your bot will only learn kickoffs. If you want it to handle air dribbles, you need to put it in those situations.
 
@@ -44,7 +44,7 @@ result.stateSetter = new CombinedState({
 
 **Use this when:** You want variety. Your bot practices multiple scenarios in one run.
 
-## Which Should You Use?
+## Which should you use, then?
 
 For beginners:
 - Start with **KickoffState** – Simple, consistent, teaches basic gameplay.
@@ -53,7 +53,7 @@ For beginners:
 For advanced training:
 - Use **CombinedState** with multiple setters to expose your bot to diverse scenarios.
 
-## How to Change It
+## How do I change it?
 
 In `ExampleMain.cpp`, look for this line:
 ```cpp
