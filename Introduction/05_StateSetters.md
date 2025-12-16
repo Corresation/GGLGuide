@@ -8,7 +8,7 @@ This determines what situations your bot practices.
 
 ## Why do they even matter?
 
-If you only train on kickoffs, your bot will only learn kickoffs. If you want it to handle air dribbles, you need to put it in those situations.
+If you only train on kickoffs, your bot will only start at kickoffs. If you want it to handle air dribbles more often, you need to put it in those situations. It can still learn it without, though (as long as you have a reward).
 
 State setters define the "curriculum" your bot learns from.
 
