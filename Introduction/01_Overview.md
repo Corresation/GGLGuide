@@ -34,7 +34,3 @@ You control:
 
 It runs in C++. It uses high speed physics and collects a lot of steps per second from the efficient environment. 
 This makes gathering timesteps much quicker than other environments. However, it was unfortunately given out to the public for people to exploit. Considering this cannot be undone, I believed it would be helpful to get people started using this framework since it's inevitable.
-
-## NEXT SECTION
-
-Move to the next section when you understand what GigaLearn is and what training means.
