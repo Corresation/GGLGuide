@@ -1,6 +1,6 @@
 # Tips & Troubleshooting
 
-This is a big list of advice for making a successful beginner bot. These are **behaviour problems**, not setup errors. If your training isn't even starting, that's a different issue—this guide assumes you have GigaLearn already running.
+This is a big list of advice for making a successful beginner bot. These are **behaviour problems**, not setup errors. If your training isn't even starting, that's a different issue. This guide assumes you have GigaLearn already running.
 
 ---
 
