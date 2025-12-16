@@ -52,7 +52,7 @@ This is where you:
 - Configure WandB configss
 - Start the training loop
 
-## Why This File Matters
+## Why does this file matter?
 
 Every time you want to change something about your bot, you edit this file:
 - Want different rewards? Edit the `rewards` vector.
