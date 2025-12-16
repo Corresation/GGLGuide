@@ -28,22 +28,22 @@ This is a big list of advice for making a successful beginner bot. These are **b
 
 ## Training Speed Issues
 
-### Training is really slow (under 10,000 SPS).
+### Training is really slow (under 10,000 SPS)
 - **Check GPU usage:** Make sure you're using `GPU_CUDA`, not CPU.
 - **Lower `cfg.numGames`:** If you're running out of RAM, reduce games.
 - **Lower `cfg.ppo.miniBatchSize`:** If you're running out of VRAM, reduce this (50,000 -> 25,000 is typical and perfectly fine!)
 - **Check tick skip:** Higher tick skip = faster training but less precise control (8 is standard, 4 is for advanced movement).
 
 ### SPS drops over time during training
-- **This is normal.** Neural network gets bigger in memory as it learns
-- **Fix:** Restart training every 500M-1B steps if it drops significantly
-- **Fix:** Lower `miniBatchSize` if VRAM is maxing out
+- **This is normal.** Neural network gets bigger in memory as it learns.
+- **Fix:** Restart training if it drops significantly; there will be an issue with your framework.
+- **Fix:** Lower `miniBatchSize` if VRAM is maxing out.
 
 ### Training stutters or freezes periodically
-- **Cause:** Checkpoint saving
-- **Fix:** Increase `cfg.tsPerSave` to save less frequently (e.g., 5M instead of 1M)
-- **Cause:** WandB logging overhead
-- **Fix:** Set `cfg.sendMetrics = false` temporarily to test if WandB is the issue
+- **Cause:** Checkpoint saving.
+- **Fix:** Increase `cfg.tsPerSave` to save less frequently (e.g., 5M instead of 1M).
+- **Cause:** WandB logging overhead.
+- **Fix:** Set `cfg.sendMetrics = false` temporarily to test if WandB is the issue.
 
 ---
 
@@ -68,12 +68,12 @@ This is a big list of advice for making a successful beginner bot. These are **b
 ## Common Beginner Mistakes
 
 ### Changing too many things at once
-- **Problem:** You change rewards, learning rate, tick skip, and network layers all in one run
-- **Result:** You don't know what caused the improvement or regression
+- **Problem:** You change rewards, learning rate, tick skip, and network layers all in one run.
+- **Result:** You don't know what caused the improvement or regression.
 - **Fix:** Change **one thing at a time** and train for 50M+ steps to see the effect.
 NOTE: Sometimes this works in the framework. You can spam rewards earlier on, get better speed but general results for rotation will flatline. It can still end up SCARILY good if done right.
 
-### Switching observation builders mid-training.
+### Switching observation builders mid-training
 - **Problem:** You start with `DefaultObs` then switch to `AdvancedObs`.
 - **Result:** Training crashes.
 - **Fix:** **Never change obs during training.** Pick one and stick with it for the entire run.
@@ -94,7 +94,7 @@ NOTE: It can work; it can boost training time, but only if you have the right re
 - **Fix:** Bots take 50-100M steps to start scoring consistently
 - **Fix:** Be patient. Training is slow.
 
-### Copying reward weights from someone else's bot without understanding them.
+### Copying reward weights from someone else's bot without understanding them
 - **Problem:** You see a 1v1 bot with `VelocityBallToGoalReward` at 10.0 and copy it.
 - **Fix:** Weights are context-dependent. Start with proven defaults, adjust slowly.
 - **Fix:** Understand what each reward does before changing weights.
@@ -104,12 +104,12 @@ NOTE: It can work; it can boost training time, but only if you have the right re
 ## What's Normal vs. What's Broken
 
 ### Normal things that look broken:
-- **Bot doesn't score until 50M+ steps** → This is fine
-- **Rewards increase slowly** → Learning is gradual
+- **Bot doesn't score until 50M+ steps** → This is fine.
+- **Rewards increase slowly** → Learning is gradual.
 - **Bot keeps flipping after hundreds of millions of steps** → Self-corrects over time. It's VERY normal.
-- **Policy loss spikes occasionally** → Normal variance
-- **Entropy decreases slowly** → Bot is gaining confidence
-- **Bot ball-chases early on** → Rotation comes later
+- **Policy loss spikes occasionally** → Normal variance.
+- **Entropy decreases slowly** → Bot is gaining confidence.
+- **Bot ball-chases early on** → Rotation comes later.
 - **WandB rating charts spike and die** → Literally normal as anything. It's only concerning if it's a *BIG* difference.
 
 ### Actually broken things:
