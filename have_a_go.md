@@ -122,7 +122,7 @@ std::vector<WeightedReward> rewards = {
 **With hyperparameters:**
 ```cpp
 cfg.ppo.entropyScale = 0.035f;   // or 0.03
-cfg.ppo.gaeGamma = 0.99f;
+cfg.ppo.gaeGamma = 0.99f;    // depends on your tickSkip
 cfg.ppo.policyLR = 1e-4;
 cfg.ppo.criticLR = 1e-4;
 
@@ -132,6 +132,4 @@ cfg.oldVersionProbability = 0.15f;
 
 Again, this is simply a guide on a basic bot. You can train it to become advanced, but there's not enough to it for it to become amazing.
 At best, this will end up competing well with Necto or Nexto. Add your own rewards when the time's right.
-```
-
-This is a solid foundation for a competent 1v1 bot trained over 3-5 billion steps.
+Credit goes to Kue and Zealan for the rewards and structural information.
