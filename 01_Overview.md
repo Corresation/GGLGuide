@@ -2,19 +2,19 @@
 
 This section explains the basics of GigaLearn in simple terms.
 
-## What IS GigaLearn?
+## What is GigaLearnCPP?
 
 GigaLearn is a fast training system for Rocket League bots. It uses PPO. It runs alongside/with RocketSim. It teaches a bot how to play by giving it rewards.
 Simple as that if you dumb it down.
 
-## WHAT PPO MEANS
+## What is "PPO"?
 
 PPO is a training method. 
 The bot tries actions, gets rewards and learns which actions are good. 
 It repeats this many times and improves gradually. 
 This depends on your structure, though.
 
-## HOW TRAINING WORKS
+## So, how does training work?
 
 1. The bot sees the game state.
 2. The bot chooses an action.
@@ -22,7 +22,7 @@ This depends on your structure, though.
 4. The bot updates its brain.
 5. This repeats for millions and billions of steps.
 
-## WHAT YOU CAN CONTROL
+## What can I control when my bot is training?
 
 You control:
 
@@ -32,10 +32,10 @@ You control:
 * State setters
 * How long it trains
 
-## WHY GGL IS ONE OF THE QUICKEST
+## GigaLearn is the quickest public framework, however it was leaked by a group of cheaters
 
 It runs in C++. It uses high speed physics and collects a lot of steps per second from the efficient environment. 
-This makes gathering timesteps much quicker than other environments.
+This makes gathering timesteps much quicker than other environments. However, it was unfortunately given out to the public for people to exploit. Considering this cannot be undone, I believed it would be helpful to get people started using this framework since it's inevitable.
 
 ## NEXT SECTION
 
