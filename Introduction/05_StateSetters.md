@@ -44,7 +44,7 @@ result.stateSetter = new CombinedState({
 
 **Use this when:** You want variety. Your bot practices multiple scenarios in one run.
 
-## Which should you use, then?
+## Which StateSetters should I use?
 
 For beginners:
 - Start with **KickoffState** – Simple, consistent, teaches basic gameplay.
