@@ -1,12 +1,12 @@
 # 03: Rewards
 
-## What Are Rewards?
+## What are rewards?
 
 Rewards tell your bot what's good and what's bad. When your bot does something you want (like touching the ball), it gets a positive reward. When it does something you don't want (like getting scored on), it will get a negative reward.
 
 Rewards are how you teach your bot what the goal is.
 
-## How Rewards Work
+## How do rewards work?
 
 Every frame, your bot gets a reward value (a number). Positive = good. Negative = bad. Zero = neutral.
 
@@ -17,7 +17,7 @@ For example (this is using my default ExampleMain.cpp as reference):
 
 Your bot tries to collect as much reward as possible over time. Sometimes, the bot can compete to get more than the opponent!
 
-## Important: Timesteps Teach Most Things
+## Important: Timesteps teach most things!
 
 Here's what beginners get wrong: **you don't need rewards for everything.**
 
