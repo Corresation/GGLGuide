@@ -1,7 +1,5 @@
 # 01: Overview and Introduction
 
-This section explains the basics of GigaLearn in simple terms.
-
 ## What is GigaLearnCPP?
 
 GigaLearn is a fast training system for Rocket League bots. It uses PPO. It runs alongside/with RocketSim. It teaches a bot how to play by giving it rewards.
