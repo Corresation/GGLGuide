@@ -36,7 +36,6 @@ This guide is written for beginners. No understanding of math needed. No coding 
 * 04: ExampleMain.cpp
 * 05: State Setters
 * 06: Letting Your Bot Train
-* 07: WandB Metrics
 
 Each folder will have simple markdown files with short explanations; nothing more.
 
