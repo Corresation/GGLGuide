@@ -22,6 +22,8 @@ using namespace RLGC;
 
 EnvCreateResult EnvCreateFunc(int index) {
     std::vector<WeightedReward> rewards = {
+      //  { new GoalReward(-.80f), 150.f },
+      //  { new VelocityBallToGoalReward(), 5.f },
         { new VelocityPlayerToBallReward(), 1.f },
         { new FaceBallReward(), .1f },
         { new TouchBallReward(), 5.f },
