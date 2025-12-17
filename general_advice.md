@@ -148,9 +148,9 @@ NOTE: It can work; it can boost training time, but only if you have the right re
 
 ### How to verify AI suggestions:
 - Cross-check reward names with `CommonRewards.h`
-- Check if suggested hyperparameters are in reasonable ranges (LR: 1e-5 to 3e-4, entropy: 0.03-0.05)
-- Ask AI to explain *why* it's suggesting something before implementing
-- Test changes for 50M+ steps before judging if they worked
+- Check if suggested hyperparameters are in reasonable ranges (LR: 8e-5 to 2e-4, entropy: 0.03-0.045).
+- Ask AI to explain *why* it's suggesting something before implementing.
+- Test changes for 50M+ steps before judging if they worked.
 - Add some files of mistakes you've made. Open a project, put it in there and you'll gain better results the more you fail and realise.
 
 ---
